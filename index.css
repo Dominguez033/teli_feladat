@@ -1,14 +1,17 @@
-*{
+html{
     background-image: url("GRID_TABLAZAT/kepek/hatter.jpg");
 }
 
+*{
+    background-color: white;
+}
+
 body{
-    max-width: 80%;
-    max-height: 80%;
+    max-width: 60%;
+    max-height: 60%;
     margin: auto;
     padding: auto;
     align-items: center;
-    background-color: white;
 }
 
 header{
@@ -21,5 +24,84 @@ header, h1{
     color: white;
     font-weight: bolder;
     font-size: xx-large;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.buttons{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    height: fit-content;
+}
+
+.buttons a{
+    color: white;
+    border: 1px solid white;
+    background-color: rgb(0, 153, 255);
+    width: 50px;
+    padding: 0.5rem;
+    padding-inline: 3.5rem;
+    text-align: center;
+    margin: 2px;
+    border-radius: 0.75rem;
+    text-decoration: none;
+}
+
+p{
+    margin: auto;
+    padding: auto;
+}
+
+table{
+    width: 100%;
+    height: fit-content;
+    max-width: 600px;
+    border-collapse: collapse;
+}
+
+th{
+    background-color: transparent;
+}
+
+td{
+    background-color: transparent;
+    padding: 3px;
+}
+
+tr {
+    border-bottom: 1px blue solid;
+    background-color: white;
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(171, 248, 255);
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr;
+    padding-top: 1rem;
+    gap: 10px;
+}
+
+.vers{
+    border: solid gray 1px;
+    padding-left: 20px;
+    padding-right: 50px;
+    padding-block: 2rem;
+}
+
+h2{
+    font-size: 20px;
+}
+
+.vers p{
+    font-size: 16px;
+}
+
+footer{
+    background-color: rgb(0, 153, 255);
+    margin: auto;
+    padding-block: 12px;
     text-align: center;
 }
