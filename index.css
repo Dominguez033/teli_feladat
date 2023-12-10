@@ -1,5 +1,6 @@
 html{
     background-image: url('GRID_TABLAZAT/kepek/hatter.jpg');
+    padding-bottom: 3rem;
 }
 
 body{
@@ -14,18 +15,21 @@ body{
 .grid{
     display: grid;
     grid-template-columns: 0.5fr 1fr 1fr;
+    padding-top: 2rem;
 }
 
 header{
-    color: white;
-    font-weight: 700;
-    font-size: xx-large;
-    width: 100%;
-    text-align: center;
+    background-image: url("GRID_TABLAZAT/kepek/fejlec.jpg");
+    padding: 20px;
+    padding-top: 50px;
 }
 
-p{
-    height: 100px;
+header h1{
+    color: white;
+    font-weight: bolder;
+    font-size: xx-large;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 .buttons{
